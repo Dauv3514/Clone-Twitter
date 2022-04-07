@@ -20,7 +20,7 @@
       <div class="lg:w-full relative">
 
         <button @click="dropdown = true" class="flex items-center w-full hover:bg-lightblue rounded-full p-2 focus:outline-none">
-          <img src="./img/valentin.png" class="w-10 h-10 rounded-full border-lighter" />
+          <img src="../public/img/valentin.png" class="w-10 h-10 rounded-full border-lighter" />
           <div class="hidden lg:block ml-4">
             <p class="text-sm font-bold leading-tight"> Valentin </p>
             <p class="text-sm leading-tight"> @VAal35 </p>
@@ -30,7 +30,7 @@
 
         <div v-if="dropdown === true" class="absolute bottom-0 left-0 w-64 rounded-lg shadow-md border-lightest bg-white mb-16">
           <button @click="dropdown = false" class="p-3 flex items-center w-full hover:bg-lightest p-2 focus:outline-none">
-            <img src="./img/valentin.png" class="w-10 h-10 rounded-full " />
+            <img src="../public/img/valentin.png" class="w-10 h-10 rounded-full " />
             <div class="ml-4">
               <p class="text-sm font-bold leading-tight"> Valentin </p>
               <p class="text-sm leading-tight"> @VAal35 </p>
@@ -57,7 +57,7 @@
 
       <div class="px-5 py-3 border-b-2 border-lighter flex">
         <div>
-          <img src="./img/valentin.png" class="flex-none w-14 h-13 rounded-full border border-lighter"/>
+          <img src="../public/img/valentin.png" class="flex-none w-14 h-13 rounded-full border border-lighter"/>
         </div>
           <form v-on:submit.prevent = "addNewTweet" class="w-full px-4 relative">
           <textarea v-model="tweet.content" placeholder="Quoi de neuf ?" class="mt-3 pb-3 w-full focus:outline-none"/>
@@ -76,7 +76,7 @@
       <div class="flex flex-col-reverse">
         <div v-for="tweet in tweets" :key="tweet.id" class="w-full p-4 border-b hover:bg-lighter flex">
           <div class="flex-none mr-4">
-            <img src="./img/valentin.png" class="h-12 w-12 rounded-full flex-none"/>
+            <img src="../public/img/valentin.png" class="h-12 w-12 rounded-full flex-none"/>
           </div>
           <div class="w-full">
             <div class="flex items-center w-full">
